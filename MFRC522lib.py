@@ -122,6 +122,7 @@ class MFRC522lib:
         self.Write_MFRC522(self.TReloadRegH, 0)
         self.Write_MFRC522(self.TxAutoReg, 0x40)
         self.Write_MFRC522(self.ModeReg, 0x3D)
+        self.Write_MFRC522(self.RFCfgReg, 0x70)
         self.AntennaOn()
 
     def MFRC522_Reset(self):
